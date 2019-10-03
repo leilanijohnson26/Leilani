@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<style>
+			body{
+				background-color: yellow;
+			}
+			h1 {
+
+				font-family: Verdana;
+				color: red;
+				text-align: center;
+				transition: 0.2s;
+			}
+			p {
+
+				font-family: Verdana;
+				color: red;
+				text-align: center;
+				transition: 0.2s;
+			}
+			img {
+				width:150px;
+				height:100px;
+				border:5px solid red;
+				transition: 0.2s;
+
+			}
+			.center {
+				text-align:center;
+			}
+			h1:hover{
+				color: purple;
+			} 
+			img:hover{
+				border:5px solid purple;
+				cursor:pointer;
+			}
+			p:hover{
+				color:purple;
+			}
+		</style>
+
+	</head>
+	
+	<body>
+		<div id="magicalDVDBoxOfWonders">
+		<h1> for sneha </h1>
+		<div class="center" >
+			<a href="file:///G:/My%20Drive/CompSciClub/index.html">
+			<img src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_675,w_1200,x_0,y_0/dpr_1.5/c_limit,w_608/fl_lossy,q_auto/v1492808153/cheats/2012/05/13/man-attempts-fist-pumping-world-record/fist-pump-cheat_xgdaqa"> 
+		</a>
+		</div>
+		<p> sneha sucks </p>
+		</div>
+		<script>
+			document.getElementById("magicalDVDBoxOfWonders").style.marginTop = "0px";
+			var marginSize = 0;
+			var height = document.documentElement.clientHeight;
+			var aHHH = true;
+			setInterval(myFunction, 5);
+			function myFunction(){
+					document.getElementById("magicalDVDBoxOfWonders").style.marginTop = marginSize + "px";
+					if (aHHH)
+					{
+						marginSize += 1;
+					}
+					else
+					{
+						marginSize -=1;
+					}
+					if (marginSize > height - 220)
+					{
+						aHHH = false;
+					} 
+					else if (marginSize < 0)
+					{
+						aHHH = true;
+					}
+			}
+
+			document.getElementById("magicalDVDBoxOfWonders").addEventListener("load", myFunction());
+
+		</script>
+	</body>
+
+
+</html>
